@@ -1,0 +1,48 @@
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
+
+
+
+@keyframes chrome_effect {
+  0% {background-position:-200px 0;}
+  10% {background-position:600px 20;}
+  100% {background-position:800px 0;}
+}
+
+
+.chrome {
+  position: relative;
+  background-image: -webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #f5f5f5;
+  font-size: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: italic;
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+}
+
+.chrome:before {
+  content: '■■■■■■■■■■■■■■';
+  position: absolute;
+  left: 0;
+  top: -80px;
+  z-index: 10;
+  background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+  background-position:-400px 0;
+  background-clip: text;
+  -webkit-text-stroke: 0;
+  /* padding: 50px; */
+  margin-bottom: 30px;
+  /* margin-left: 350px; */
+  animation-name: chrome_effect;
+  animation-duration: 6s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  font-size: 250px;
+  letter-spacing: -60px;
+  /* font-family: 'Titillium Web', sans-serif; */
+}
