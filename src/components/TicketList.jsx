@@ -20,8 +20,16 @@ var masterTicketList = [
 ];
 
 function TicketList(){
+  let bg={
+    backgroundColor: '#269382',
+    backgroundImage: 'url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png")',
+    minHeight:"1100px",
+    minWid:"1100px",
+    borderTop: "10px outset"
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  }
   return (
-    <div>
+    <div style={bg}>
     <hr/>
     {masterTicketList.map((ticket, index) =>
       <Ticket names={ticket.names}
