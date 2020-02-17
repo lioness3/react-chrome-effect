@@ -10,7 +10,7 @@ function Header(){
     <div className='chrome'>
     <h1>Help Queue</h1>
     </div>
-<Link to="/">Home</Link> | <Link to="/newticket" style={{position:'relative', zIndex:'500'}}>Create Ticket</Link>
+<Link to="/" style={{position:'relative', zIndex:'500'}}>Home</Link> | <Link to="/newticket" style={{position:'relative', zIndex:'500'}}>Create Ticket</Link>
     </div>
   );
 }
