@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Moment from 'moment';
 
 function Ticket(props){
 
@@ -26,16 +27,20 @@ borderRadius:"5px",
 
     <h3>{props.location} - {props.names}</h3>
     <hr style={hrStyle}/>
+    <h4>{displayTimeOpen(props.timeOpen)} ago</h4>
     <p><em>{props.issue}</em></p>
 
     </div>
     </div>
   );
 }
-
+function displayTimeOpen(timeOpen) {
+  return timeOpen.from(new Moment(), true);
+}
 Ticket.propTypes = {
   names: PropTypes.string,
   location: PropTypes.string,
-  issue: PropTypes.string
+  issue: PropTypes.string,
+    timeOpen: PropTypes.instanceOf(Moment).isRequired
 };
 export default Ticket;
