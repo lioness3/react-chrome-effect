@@ -6,17 +6,21 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "install": "^0.13.0",
     "moment": "^2.18.1",
+    "npm": "^6.13.7",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-redux": "^5.0.6",
     "react-router-dom": "^4.3.1",
     "react-scripts": "3.3.1",
+    "redux": "^3.7.2",
     "uuid": "^3.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest; exit 0",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -33,5 +37,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-jest": "^20.0.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest": "^20.0.4"
   }
 }
